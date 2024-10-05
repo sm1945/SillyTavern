@@ -146,6 +146,7 @@ async function sendClaudeRequest(request, response) {
                 'Content-Type': 'application/json',
                 'anthropic-version': '2023-06-01',
                 'x-api-key': apiKey,
+                'Authorization': `Bearer ${apiKey}`,
                 ...additionalHeaders,
             },
             timeout: 0,
